@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react'
+import { useState } from 'react'
 import { CreateTodo } from './components/CreateTodo'
 import { Todos } from './components/Todos'
 import './index.css'

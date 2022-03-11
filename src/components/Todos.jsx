@@ -1,5 +1,4 @@
 import { Reorder, AnimatePresence } from 'framer-motion'
-import { Fragment } from 'react'
 
 const variants = {
   initial: {
@@ -30,19 +29,17 @@ export const Todos = ({ todos = [], setTodos, onRemove }) => {
 
 const TodoItem = ({ todo, onRemove }) => {
   return (
-    <Fragment>
-      <Reorder.Item
-        className="w-1/2 mx-auto mt-4 first:mt-0 p-2 text-center bg-white text-indigo-500 rounded-md shadow-lg shadow-indigo-500/40 cursor-move"
-        value={todo}
-        whileDrag={{
-          scale: 1.1,
-          boxShadow: '20px 20px 60px #bebebe, -20px -20px 60px #ffffff;',
-        }}
-        onDoubleClick={() => onRemove(todo.id)}
-        {...variants}
-      >
-        <span className="">{todo.title}</span>
-      </Reorder.Item>
-    </Fragment>
+    <Reorder.Item
+      className="w-1/2 mx-auto mt-4 first:mt-0 p-2 text-center bg-white text-indigo-500 rounded-md shadow-lg shadow-indigo-500/40 cursor-move"
+      value={todo}
+      whileDrag={{
+        scale: 1.1,
+        boxShadow: '20px 20px 60px #bebebe, -20px -20px 60px #ffffff;',
+      }}
+      onDoubleClick={() => onRemove(todo.id)}
+      {...variants}
+    >
+      <span className="">{todo.title}</span>
+    </Reorder.Item>
   )
 }
