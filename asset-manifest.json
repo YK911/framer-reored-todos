@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/framer-reored-todos/static/css/main.9ea9618f.css",
+    "main.js": "/framer-reored-todos/static/js/main.27acd16c.js",
+    "index.html": "/framer-reored-todos/index.html",
+    "main.9ea9618f.css.map": "/framer-reored-todos/static/css/main.9ea9618f.css.map",
+    "main.27acd16c.js.map": "/framer-reored-todos/static/js/main.27acd16c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ea9618f.css",
+    "static/js/main.27acd16c.js"
+  ]
+}
